@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+
+	<script src="https://unpkg.com/scrollreveal"></script>
+
+	<title>ESCAPE ROOM BUT WALMART</title>
+</head>
+<body>
+	<div class="mega-cont">
+
+		<nav class="nav">
+			<a href="index.html" class="logo">
+				<h1 class="logo-title">Walmart Escape Room</h1>
+			</a>
+
+			<ul class="timer-ul">
+				<li class="ul-item"><h1 id="countdown" class="timer">3:30</h1></li>
+			</ul>
+		</nav>
+
+
+		<section id="#home" class="home-div">
+			<div class="home-title-div">
+				<h1 class="home-title">The Escape Room</h1>
+			</div>
+
+			<div class="home-button-div">
+				<a class="home-button" href="#rules"><p class="button-text">Read The Rules</p></a>
+				<h3 class="hidden">6</h3>
+			</div>
+
+			<div class="wave wave1"></div>
+			<div class="wave wave2"></div>
+			<div class="wave wave3"></div>
+			<div class="wave wave4"></div>
+
+			<h3 class="hei">0</h3>
+		</section>
+
+		<section class="rules-sec" id="rules">
+			<div class="reveal-div">
+				<div class="title-div">
+					<div class="title-text-div">
+						<h1 class="title-text">Rules</h1>
+					</div>
+				</div>
+
+				<div class="rules-div">
+					<div class="image-div-rules">
+						<img class="img" src="logo.png">
+					</div>
+
+					<div class="text-div-rules">
+						<p class="rules-text">
+							In this escape room, the Player has to find the numbers hidden in this webpage and enter the numbers in the textbox given below to escape and get to the prize. Upon entering the number containing 3 digits, the player will have to arrange them in the right sequence to get to the next webpage. The players are given a time limit of 3.5 minutes, within which they have to get throught the webpage. If the players aren't able to get the password, they shall then be prompted to another webpage with a message telling them how bad they're and how worthless their mind is to this world. If the player experiences some difficulty finding the numbers, they shall click on the buttons given below to get a hint.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="ending reveal-div" id="ending">
+			<div class="ending-cont">
+				<div class="hints-div">
+					<a class="hint-button btn-1" href="#ending" onclick="firstNumber()"><h1 class="hint-text">Hint 1</h1></a>
+					<a class="hint-button btn-2" href="#ending" onclick="secondNumber()"><h1 class="hint-text">Hint 2</h1></a>
+					<a class="hint-button btn-3" href="#ending" onclick="thirdNumber()"><h1 class="hint-text">Hint 3</h1></a>
+				</div>
+
+				<div class="textbox">
+					<input id="num_place" placeholder="Enter a 3 Digit Number..." type="text" class="numbers-input" name="">
+					<a onclick="winPage()" href="#ending" class="enter-button" id="enter-btn"><h1 class="button-text">Enter</h1></a>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
